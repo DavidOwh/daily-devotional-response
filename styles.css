@@ -1,0 +1,59 @@
+:root{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",Arial,sans-serif;color:#2f2b27;background:#f4efe6;font-size:18px}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#f7f3ec,#efe7db);min-height:100vh}.app-shell{max-width:760px;margin:0 auto;padding:20px 16px 48px}.test-badge{display:inline-block;background:#6d5d4b;color:#fff;padding:6px 12px;border-radius:999px;font-size:.85rem;margin-bottom:12px}.hero,.card{background:#fffdf9;border:1px solid #e2d8c9;border-radius:20px;padding:24px;box-shadow:0 8px 24px rgba(62,48,35,.07);margin-bottom:18px}.date{margin:0 0 8px;color:#6f6257}.hero h1{font-size:2rem;line-height:1.25;margin:.2rem 0}.scripture{font-weight:700;font-size:1.15rem}.focus{font-size:1.15rem;line-height:1.7;border-left:4px solid #b9976f;padding-left:14px}.card h2{font-size:1.45rem;margin-top:0}.question-type{color:#765f47;font-weight:700}.option{display:block;width:100%;text-align:left;margin:12px 0;padding:16px;border-radius:14px;border:2px solid #d9cdbd;background:#fff;font-size:1.05rem;line-height:1.5}.option:hover,.option:focus{border-color:#9f7d57}.option.correct{border-color:#3d7a57;background:#edf7f0}.option.incorrect{border-color:#a74c4c;background:#fbefef;font-weight:700}.option.incorrect::after{content:"  ✕";font-size:1.2em;font-weight:900;color:#a74c4c;float:right;line-height:1}.option:disabled{opacity:1;color:inherit}.explanation{margin-top:16px;padding:16px;border-radius:14px;background:#f3eee6;line-height:1.7}.primary,.secondary{min-height:52px;border-radius:14px;padding:12px 18px;font-size:1rem;border:0;cursor:pointer}.primary{background:#6d5d4b;color:#fff;width:100%;margin-top:14px}.secondary{background:#eee6da;color:#3c332c}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hidden{display:none}.reflection-options label{display:block;padding:12px 0}.note{width:100%;min-height:140px;border:2px solid #d9cdbd;border-radius:14px;padding:14px;font-size:1rem;line-height:1.5}.privacy{font-size:.92rem;color:#6d6258}.day-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px}#dayCounter{font-weight:700}.completion{font-size:1.15rem;line-height:1.7;background:#f3eee6;padding:18px;border-radius:14px}@media(max-width:520px){:root{font-size:17px}.hero,.card{padding:20px 17px;border-radius:16px}.hero h1{font-size:1.65rem}.day-nav{align-items:stretch}.day-nav button{flex:1}#dayCounter{display:flex;align-items:center;justify-content:center;min-width:70px}}
+
+/* v0.4 branding and return navigation */
+.home-link{position:fixed;top:20px;left:20px;z-index:20;display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:#144d6b;color:#fff;padding:12px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 24px rgba(20,77,107,.24);border:2px solid rgba(255,255,255,.65)}
+.home-link:hover,.home-link:focus{background:#0e405b;outline:3px solid rgba(20,77,107,.2);outline-offset:3px}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:14px;min-width:0}
+.brand img{width:76px;height:76px;border-radius:20px;box-shadow:0 6px 18px rgba(62,48,35,.13);flex:0 0 auto}
+.brand-title{font-size:1.5rem;font-weight:900;line-height:1.2}
+.brand-subtitle{margin-top:4px;color:#6f6257;font-size:.9rem;line-height:1.4}
+.top-row .test-badge{margin:0;white-space:nowrap}
+@media(max-width:980px){.home-link{position:static;margin:16px 16px 0}.app-shell{padding-top:14px}}
+@media(max-width:520px){.top-row{align-items:flex-start}.brand img{width:62px;height:62px;border-radius:17px}.brand-title{font-size:1.25rem}.brand-subtitle{font-size:.82rem}.top-row .test-badge{font-size:.75rem;padding:5px 9px}.home-link{padding:10px 16px}}
+
+/* v0.5 Bible evidence under each answer */
+.evidence{margin-top:12px;padding-top:12px;border-top:1px solid #d8cdbc;color:#4d4036;font-size:.96rem;line-height:1.6}
+
+/* v0.6 bilingual language switch */
+.top-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.language-switch{display:inline-flex;background:#eee6da;border-radius:999px;padding:4px;border:1px solid #d8cdbc}
+.lang-btn{border:0;background:transparent;color:#4b4037;padding:8px 13px;border-radius:999px;font-weight:800;cursor:pointer;font-size:.9rem}
+.lang-btn.active{background:#144d6b;color:#fff;box-shadow:0 3px 10px rgba(20,77,107,.2)}
+@media(max-width:620px){.top-row{flex-direction:column}.top-controls{width:100%;justify-content:space-between}.language-switch{flex:1}.lang-btn{flex:1}.top-row .test-badge{margin-left:auto}}
+
+/* v0.7 larger language controls for easier viewing and tapping */
+.language-switch{padding:6px;gap:4px;min-height:56px}
+.lang-btn{min-height:44px;min-width:92px;padding:10px 20px;font-size:1.05rem;line-height:1.2}
+@media(max-width:620px){
+  .language-switch{width:100%;min-height:60px}
+  .lang-btn{min-height:48px;min-width:0;padding:11px 18px;font-size:1.08rem}
+}
+
+/* v0.8: slightly larger mobile text for easier reading and tapping */
+@media(max-width:620px){
+  :root{font-size:18px}
+  .date{font-size:1.02rem;line-height:1.5}
+  .hero h1{font-size:1.78rem;line-height:1.3}
+  .scripture{font-size:1.2rem;line-height:1.55}
+  .focus{font-size:1.18rem;line-height:1.75}
+  .question-type{font-size:1rem}
+  .card h2{font-size:1.5rem;line-height:1.45}
+  .option{font-size:1.12rem;line-height:1.55;padding:17px 16px}
+  .explanation{font-size:1.04rem;line-height:1.75}
+  .evidence{font-size:1rem;line-height:1.65}
+  .primary,.secondary{font-size:1.05rem}
+  .reflection-options label{font-size:1.06rem;line-height:1.55}
+  .note{font-size:1.05rem}
+}
+
+
+/* v0.9 full-year date navigation */
+.date-jump{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #e4dbcf}
+.date-jump label{font-weight:800;color:#5f5145;white-space:nowrap}
+.date-jump-row{display:flex;gap:9px;align-items:center}
+.date-jump input{min-height:52px;border:2px solid #d9cdbd;border-radius:14px;background:#fff;padding:9px 12px;font:inherit;color:#2f2b27}
+.date-jump input:focus{outline:3px solid rgba(20,77,107,.18);border-color:#144d6b}
+.date-jump .secondary{min-width:82px}
+@media(max-width:620px){.date-jump{align-items:stretch;flex-direction:column}.date-jump-row{width:100%}.date-jump input{flex:1;min-width:0;font-size:1.05rem}.date-jump .secondary{min-width:88px}}
