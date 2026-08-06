@@ -61,5 +61,18 @@
     </nav>
   </main>
   <script src="app.js"></script>
+
+  <!-- ===== 使用记录 Usage tracking ===== -->
+  <script>
+  (function () {
+    var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbygXHscagN2BWn7LDLnY28_hb9HNM6V13r63D15hsWBGslCheFDrtpqnyP43U0In3lr8g/exec';
+    var APP_NAME = '每日灵修问答';
+    try {
+      fetch(SCRIPT_URL + '?app=' + encodeURIComponent(APP_NAME), { mode: 'no-cors' });
+    } catch (err) {
+      // 记录失败不影响使用者
+    }
+  })();
+  </script>
 </body>
 </html>
